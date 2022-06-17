@@ -653,7 +653,7 @@ Conteudo
 }
 
 /*---------------------- 
--------Imgs ---------------- */
+-------Sessão Você tera acesso ---------------- */
 :root {
 --bs-secondary-rgb: 245, 244, 248;
 }
@@ -719,11 +719,62 @@ Conteudo
   z-index: -1;
 }
 
-
-
-
-
-
+.zindex-5 {
+  z-index: -5;
+}
 
 /*----------------------
+div img
 responsivo */
+
+@media (min-width: 768px) {
+  .mt-md-n4 {
+    margin-top: -1.5rem !important
+  }
+}
+
+.d-block {
+  display: block !important;
+  
+}
+
+@media (min-width: 768px) {
+  .mt-md-n5 {
+    margin-top:  -3rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .me-md-n5 {
+    margin-right:  -3rem !important;
+  }
+}
+
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/*----------------------
+h2
+responsivo */
+
+@media (min-width: 768px) {
+  .ms-md-3 {
+    margin-left:  1rem !important;
+  }
+}
+
+/*----------------------
+bloco 2
+responsivo */
+
+@media (min-width: 768px) {
+  .me-md-n3 {
+    margin-right:  -1rem !important;
+  }
+}
+
+
+
