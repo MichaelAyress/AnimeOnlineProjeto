@@ -154,29 +154,29 @@ nav li a:hover:after {
 
 nav li:nth-of-type(1) {
   
-  background-image: url(../img/naruto.png);
+  background-image: url(../img/menu1.png);
   background-repeat: no-repeat;
 
 }
 
 nav li:nth-of-type(2) {
-  background-image: url(../img/boku.png);
+  background-image: url(../img/menu2.png);
   background-repeat: no-repeat;
 }
 
 nav li:nth-of-type(3) {
-  background-image: url(../img/levi.png);
+  background-image: url(../img/menu3.png);
   background-repeat: no-repeat;
   
 }
 
 nav li:nth-of-type(4) {
-  background-image: url(../img/nana3.png);
+  background-image: url(../img/menu4.png);
   background-repeat: no-repeat;
 }
 
 nav li:nth-of-type(5) {
-  background-image: url(../img/mika3.png);
+  background-image: url(../img/menu5.png);
   background-repeat: no-repeat;
 }
 
@@ -190,17 +190,18 @@ Burger king
   right: 5rem;
   top: 3.2rem;
   z-index: 100;
-  width: 34px;
+  width: 45px;
   display: block;
   cursor: pointer;
 }
 
 .open-overlay span {
   display: block;
-  height: 3px;
-  background-color: #FF9325;
+  height: 5px;
+  background-color: #222222;
   cursor: pointer;
   margin-top: 8px;
+  box-shadow: 1px 1px 1px #FF9325;
 }
 
 .animate-top-bar {
@@ -240,7 +241,7 @@ Animation keyframes
 
 @keyframes animate-top-bar {
   0% {
-    background-color: #FF9325;
+    background-color: #222222;
   }
   50% {
     -webkit-transform: translateY(9px);
@@ -260,7 +261,7 @@ Animation keyframes
 
 @keyframes animate-bottom-bar {
   0% {
-    background-color: #FF9325;
+    background-color: #222222;
   }
   50% {
     -webkit-transform: translateY(-9px);
@@ -280,7 +281,7 @@ Animation keyframes
 
 @keyframes animate-middle-bar {
   0% {
-    background-color: #FF9325;
+    background-color: #222222;
   }
   80% {
     background-color: #fff;
@@ -306,7 +307,7 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #FF9325;
+    background-color: #222222;
   }
 }
 
@@ -326,7 +327,7 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #FF9325;
+    background-color: #222222;
   }
 }
 
@@ -338,7 +339,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #FF9325;
+    background-color: #222222;
   }
 }
 
@@ -415,7 +416,7 @@ Iniciar
   position: relative;
   margin: 0 auto;
   text-align: center;
-  padding-top: 10em;
+  padding-top: 15em;
 }
 
 
@@ -439,15 +440,12 @@ Logo TV
 
 .logo-olho {
   position: absolute;
-  width: 10%;
+  width: 12%;
   object-fit: cover;
-  top: -30%;
-  right: 29%;
+  top: -50%;
+  right: 27%;
+  z-index: 1;
   
-  
-
-  
-
 }
 
 header.header{
@@ -460,13 +458,14 @@ header.header{
 }
 
 	.header h1 {
-		font-size: 8rem;
+		font-size: 10rem;
 		color: #fff;
 		text-align: center;
 		margin-top: 0;
 		text-transform: uppercase;
 		font-weight: 900;
     font-family: 'Raleway', sans-serif;
+    z-index: 0;
 	}
 
 .glitch-window{
@@ -776,5 +775,27 @@ responsivo */
   }
 }
 
+/*-------------------------------
+           Card
+---------------------------------*/
+
+.card-hover {
+  transition: border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out !important;
+  transition-property: border-color, background-color, box-shadow !important;
+  transition-duration: 0.2s, 0.2s, 0.2s !important;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out !important;
+  transition-delay: 0s, 0s, 0s !important;
+}
+
+@media(min-width:768px) {
+  .gx-md-4{
+  --bs-gutter-x: 1.5rem;
+  }
+}
 
 
+@media(min-width: 768px) {
+  .gy-md-3 {
+    --bs-gutter-y: 1rem;
+  }
+}
