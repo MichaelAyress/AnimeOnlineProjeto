@@ -787,15 +787,6 @@ responsivo */
   transition-delay: 0s, 0s, 0s !important;
 }
 
-@media(min-width:768px) {
-  .gx-md-4{
-  --bs-gutter-x: 1.5rem;
-  }
-}
-
-
-@media(min-width: 768px) {
-  .gy-md-3 {
-    --bs-gutter-y: 1rem;
-  }
+.fs-sm {
+  font-size: 1rem !important;
 }
