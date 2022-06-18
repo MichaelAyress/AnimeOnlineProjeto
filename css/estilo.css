@@ -197,11 +197,11 @@ Burger king
 
 .open-overlay span {
   display: block;
-  height: 5px;
+  height: 4px;
   background-color: #222222;
   cursor: pointer;
   margin-top: 8px;
-  box-shadow: 1px 1px 1px #FF9325;
+  box-shadow: 1px 1px 5px #ff92255e;
 }
 
 .animate-top-bar {
