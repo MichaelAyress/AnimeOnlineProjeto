@@ -922,10 +922,10 @@ responsivo */
 .input {
   min-height: 50px;
   max-width: 340px;
-  padding: 0 5rem;
+  padding: 0 3.5rem;
   color: #fff;
   font-size: 15px;
-  border: 1px solid #5e4dcd;
+  border: 1px solid rgba(255, 255, 255,.15);
   border-radius: 6px 0 0 6px;
   background-color: transparent;
 }
@@ -935,7 +935,7 @@ responsivo */
   padding: .5em 1em;
   border: none;
   border-radius: 0 6px 6px 0;
-  background-color: #5e4dcd;
+  background-color: #FF9325;
   color: #fff;
   font-size: 15px;
   cursor: pointer;
@@ -943,10 +943,23 @@ responsivo */
 }
 
 .button--submit:hover {
-  background-color: #5e5dcd;
+  background-color: #c06b17;
 }
 
 .input:focus, .input:focus-visible {
-  border-color: #3898EC;
+  border-color: #FF9325;
   outline: none;
 }
+
+.input-icon i {
+  position: absolute;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255,.15);
+}
+
+
+.icon-email {
+  padding: 15px 0 0px 20px;
+  min-width: 50px;
+}
+
