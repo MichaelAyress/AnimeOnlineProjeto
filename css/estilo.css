@@ -658,26 +658,32 @@ Cadastrar
  -------------------  btn Menu----------------------------------*/
 
  /* From uiverse.io by @gagan-gv */
-.btn {
+
+ .align-button {
+    margin: 0 auto;
+    padding-top: 5%;
+ }
+.btn-menu {
   width: 160px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 50rem;
   border: none;
   transition: all 0.5s ease-in-out;
-  font-size: 20px;
+  font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   display: flex;
   align-items: center;
   background: #FF9325;
   color: #f5f5f5;
+  cursor: pointer;
 }
 
-.btn:hover {
+.btn-menu:hover {
   box-shadow: 0 0 20px 0px #2e2e2e3a;
 }
 
-.btn .icon {
+.btn-menu .icon {
   position: absolute;
   height: 40px;
   width: 70px;
@@ -685,28 +691,26 @@ Cadastrar
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
-  padding-bottom: 1.5%;
-  padding-right: 2%;
 }
 
-.btn .text {
+.btn-menu .text {
   transform: translateX(55px);
 }
 
-.btn:hover .icon {
+.btn-menu:hover .icon {
   width: 175px;
 }
 
-.btn:hover .text {
+.btn-menu:hover .text {
   transition: all 0.5s;
   opacity: 0;
 }
 
-.btn:focus {
+.btn-menu:focus {
   outline: none;
 }
 
-.btn:active .icon {
+.btn-menu:active .icon {
   transform: scale(0.85);
 }
 
