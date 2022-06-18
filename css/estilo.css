@@ -524,8 +524,8 @@ Button Sing in
 ==================================== */
 
 
-button,
-button::after {
+.btn-inicial,
+.btn-inicial::after {
  padding: 16px 20px;
  font-size: 18px;
  background: linear-gradient(45deg, transparent 5%, #FF9325 5%);
@@ -539,7 +539,7 @@ button::after {
  cursor: pointer;
 }
 
-button::after {
+.btn-inicial::after {
  --slice-0: inset(50% 50% 50% 50%);
  --slice-1: inset(80% -6px 0 0);
  --slice-2: inset(50% -6px 30% 0);
@@ -558,7 +558,7 @@ button::after {
  clip-path: var(--slice-0);
 }
 
-button:hover::after {
+.btn-inicial:hover::after {
  animation: 1s glitch;
  animation-timing-function: steps(2, end);
 }
@@ -622,33 +622,92 @@ button:hover::after {
 
 
 /* ====================================
-Conteudo
+Cadastrar
 ==================================== */
-.conteudo {
+.cadastrar {
   margin-top: 4%;
+  z-index: -1;
 
+}
+
+.bg-contato {
+  border-radius: 0.75rem;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  padding: 3rem 1rem;
 }
 
 .alinhar-conteudo {
   text-align: center;
 }
 
-.p-conteudo {
-  text-align: left;
-  padding-top: 1em;
-  width: 100%;
-}
 
 .icon-conteudo {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #FF9325;
-  padding: 5%;
+  padding: 05%;
 }
 
 .sub-titulo {
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   
+}
+
+/*----------------------------------------------------------------
+ -------------------  btn Menu----------------------------------*/
+
+ /* From uiverse.io by @gagan-gv */
+.btn {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #FF9325;
+  color: #f5f5f5;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  padding-bottom: 1.5%;
+  padding-right: 2%;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
 }
 
 /*---------------------- 
