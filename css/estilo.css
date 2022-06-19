@@ -862,7 +862,7 @@ responsivo */
 
 .cabecalho {
   margin-top: -8.75rem;
-  padding-top: 20rem;
+  padding-top: 24rem;
   display: block;
 }
 
@@ -930,6 +930,8 @@ responsivo */
   background-color: transparent;
 }
 
+
+
 .button--submit {
   min-height: 50px;
   padding: .5em 1em;
@@ -943,8 +945,8 @@ responsivo */
 }
 
 .button--submit:hover {
-  background-color: #c06b17;
-}
+  background-color: #ffc14d;
+} 
 
 .input:focus, .input:focus-visible {
   border-color: #FF9325;
@@ -961,5 +963,18 @@ responsivo */
 .icon-email {
   padding: 15px 0 0px 20px;
   min-width: 50px;
+}
+
+.opacity-70 {
+  opacity: .7 !important;
+}
+
+.link-footer {
+  color: #FF9325;
+}
+
+.link-footer:hover {
+  color: #FF9325;
+  
 }
 
