@@ -460,7 +460,7 @@ header.header{
 
 .glitch-window{
 	position: absolute;
-	top: 0;
+	top: 0px;
 	left: -2px;
 	width: 100%;
 	color: #222222;
