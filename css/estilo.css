@@ -955,6 +955,8 @@ Sessão 2
   transform: none;
 */
 
+
+
 .icon-principal {
   font-size: 1em;
  
@@ -966,13 +968,16 @@ Sessão 2
 }
 
 .zindex-1 {
-  z-index: -1;
+  z-index: 1;
 }
 
 .zindex-5 {
-  z-index: -5;
+  z-index: 5;
 }
 
+.z-1 {
+  z-index: -100;
+}
 
 @media (min-width: 768px) {
   .mt-md-n4 {
@@ -1013,15 +1018,21 @@ Sessão 2
   }
 }
 
-.img-hover:hover {
-  -webkit-animation: scale-up-center 0.5s linear Ambas;
-  animation: scale-up-center 0.5s linear Ambas;
+
+
+.zoom {
+  max-width: 100%;
+  -moz-transition: all 0.3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.scale-up-center {
-	-webkit-animation: scale-up-center 0.5s linear Ambas;
-	        animation: scale-up-center 0.5s linear Ambas;
+.zoom:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1) ;
+  transform: scale(1.1) ;
 }
+
 
 
 
@@ -1036,6 +1047,12 @@ Sessão 2
   transition-timing-function: ease-in-out, ease-in-out, ease-in-out !important;
   transition-delay: 0s, 0s, 0s !important;
 }
+
+.card:hover {
+ 
+  box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.068);
+}
+
 
 .fs-sm {
   font-size: 1rem !important;
