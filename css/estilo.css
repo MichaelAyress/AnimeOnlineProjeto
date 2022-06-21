@@ -421,7 +421,7 @@ Tela Inicial
 }
 
 .content p {
-  font-size: 2em;
+  font-size: 1.6em;
   color: #fff;
   padding-bottom: 50px;
 }
@@ -807,7 +807,7 @@ Botão tela inicial Sing in
 .btn-inicial,
 .btn-inicial::after {
  padding: 16px 20px;
- font-size: 25px;
+ font-size: 18px;
  background: linear-gradient(45deg, transparent 5%, #FF9325 5%);
  border: 0;
  color: #fff;
@@ -924,8 +924,9 @@ Sessão 2
 }
 
 .text-start {
-  
-   font-size: calc(1.475rem + 2.7vw);
+   text-align: left;
+   font-size: 3.4rem;
+   font-weight: 700;
    line-height: 1.2;
    font-family: "Noto Sans", sans-serif;
 }
