@@ -421,8 +421,9 @@ Tela Inicial
 }
 
 .content p {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
+  padding-bottom: 50px;
 }
 
 
@@ -449,7 +450,7 @@ header.header{
 }
 
 	.header h1 {
-		font-size: 10rem;
+		font-size: 15rem;
 		color: #fff;
 		text-align: center;
 		margin-top: 0;
@@ -806,7 +807,7 @@ Botão tela inicial Sing in
 .btn-inicial,
 .btn-inicial::after {
  padding: 16px 20px;
- font-size: 18px;
+ font-size: 25px;
  background: linear-gradient(45deg, transparent 5%, #FF9325 5%);
  border: 0;
  color: #fff;
@@ -841,6 +842,7 @@ Botão tela inicial Sing in
 .btn-inicial:hover::after {
  animation: 1s glitch;
  animation-timing-function: steps(2, end);
+ opacity: 1;
 }
 
 @keyframes glitch {
