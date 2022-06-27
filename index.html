@@ -12,6 +12,23 @@
      <!-- Font Awesome -->
      <script src="https://kit.fontawesome.com/55527a94d3.js" crossorigin="anonymous"></script>
 
+     <script>
+
+      $(document).ready(() => {
+
+      /* mouseenter / mouseleave (novos) */
+      $('#card').mouseenter((e) => {
+        $(e.target).addClass('card-hover');
+      });
+              
+      $('#img-Season2').mouseleave((e) => {
+        $(e.target).html('img-transformMenos')
+        
+      }); 
+
+      })
+  </script>
+
     
     
 </head>
@@ -47,11 +64,12 @@
           
          
           <header class="header">
-            <h1 class="glitched"><span class="titulo">Anime</h1>
-          
-              <p>Encontre seu anime favorito aqui.</p>
-              <button class="btn-inicial">Sing In</button>
-              
+
+            <h1 class="glitched position-relative text-flicker-in-glow" class="titulo">Anime</h1> 
+              <p class="has-shown p-tela-inicial">Encontre seu anime favorito aqui.</p>
+              <button class="btn-inicial has-shown" style="animation-delay: 5s">Sing In</button>
+             
+
           </header>
 
         </div>    
@@ -63,22 +81,22 @@
     <section class="position-relative overflow-hidden py-5 mb-5">
       <div class="d-done d-xl-block position-absolute top-0 start-0 h-100 bg-home" style="width: 67%;border-bottom-right-radius: .75rem;">
       </div>
+      <div class="d-xl-none position-absolute top-0 start-0 w-100 h-100 bg-secondaryR"></div>
       <!-------------------->
       <div class="container content-overlay mt-4 mb-2 mt-lg-5 mb-lg-4 pt-5 pb-md-2"><!--Inicio div 1-->
-        <h1 class="display-4 text-start">Você terá acesso</h1>
+        <h1 class="text-start">Você terá acesso</h1>
         <div class="row">
           <div class="d-none d-md-block col-md-2 pt-4 mt-4">
             <img src="img/swirly-arrow.png" width="180" alt="Arrow">
           </div>
           <div class="col-md-10 d-md-flex mt-md-n4">
 
-            <div class="d-block hover-img-scale position-relative zindex-0 mt-md-5 mx-auto me-md-n5 mb-4 mb-md-0" style="max-width: 633px;">
-
+            <div class="d-block hover-img-scale position-relative zindex-5  mt-md-5 mx-auto me-md-n5 mb-4 mb-md-0" style="max-width: 633px;">
               <div class="pt-md-5 mt-4 me-md-n5">
                 <h2 class="h4 mb-2 pb-1 ms-md-3"><i class="fa-solid fa-check icon-principal"></i> Multiplataforma</h2>
-                <div class="position-relative zindex-0">
-                  <img class=" img-fluid position-relative zindex-0" src="img/bloco.png" alt="menina segurando celular">
-                  <div class="d-none d-md-block position-absolute zindex-1" style="top: 15px;left: 20px;width:calc(100% - 35px);height: calc(100% - 30px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.141);">
+                <div class="position-relative zindex-0 ">
+                  <img class=" img-fluid position-relative zoom zindex-5" src="img/bloco.png" alt="menina segurando celular">
+                  <div class="d-none d-md-block position-absolute zindex-1 " style="top: 15px;left: 20px;width:calc(100% - 35px);height: calc(100% - 30px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.141);">
 
                   </div>
 
@@ -88,11 +106,13 @@
 
             </div>
               
-            <div class="d-block hover-img-scale position-relative mt-md-n5 mx-auto me-md-n3 zindex-5" style="max-width: 550px;">
+            <div class="d-block hover-img-scale position-relative mt-md-n5 mx-auto me-md-n3">
               <h2 class="h4 sm-md-3"><i class="fa-regular fa-comments icon-principal"></i> Chat online</h2>
-              <div class="position-relative zindex-0"> 
-              <img class="img-fluid" src="img/bloco2.png" alt="">
-              <div class="d-none d-md-block position-absolute zindex-1" style="top: 15px;left: 20px;width:calc(100% - 35px);height: calc(100% - 30px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.141);">
+              <div class="position-relative">
+              <img class="img-fluid zoom zindex-5 " src="img/bloco2.png" alt="">
+              <div class="d-none d-md-block position-absolute z-1" style="top: 15px;left: 20px;width:calc(100% - 35px);height: calc(100% - 30px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.141);">
+              
+              
 
             </div>
             </div>
@@ -102,20 +122,20 @@
 
           <div class="col-md-12 d-md-flex pt-2 pt=md-0 mt-n5">
 
-            <div class="d-block hover-img-scale position-relative my-4 mt-md-5 mb-md-0 mx-auto ms-md-0 me-md-3" style="max-width: 550px;">
+            <div class="d-block hover-img-scale position-relative my-4 mt-md-5 mb-md-0 mx-auto ms-md-0 me-md-3 zindex-5" style="max-width: 550px;">
               <h2 class="h4 ms-md-3"><i class="fa-regular fa-calendar-check icon-principal"></i> Lançamentos</h2>
-              <img class="img-fluid" src="img/bloco1.png" alt="">
-              <div class="d-none d-md-block position-absolute zindex-1" style="top: 55px;left: 20px;width:calc(100% - 35px);height: calc(100% - 80px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.141);"></div>
+              <img class="img-fluid zoom zindex-5" src="img/bloco1.png" alt="">
+              <div class="d-none d-md-block position-absolute z-1" style="top: 55px;left: 20px;width:calc(100% - 35px);height: calc(100% - 80px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.141);"></div>
 
             </div>
 
 
 
-            <div class="d-block hover-img-scale position-relative mt-md-n5 mx-auto me-md-n3 zindex-5" style="max-width: 636px;">
+            <div class="d-block hover-img-scale position-relative mt-md-n5 mx-auto me-md-n3" style="max-width: 636px;">
               <div class="d-flex flex-column">
                 <h2 class="h4 order-md-2 mb-4 mb-md-0 mt-md-4 ml-md-4"><i class="fa-solid fa-video icon-principal"></i> Alta qualidade</h2>
-                <img class="img-fluid " src="img/bb.png" alt="">
-                <div class="d-none d-md-block position-absolute zindex-1" style="top: 20px;left: 20px;width:calc(100% - 35px);height: calc(100% - 170px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.144);"></div>
+                <img class="img-fluid zoom" src="img/bb.png" alt="">
+                <div class="d-none d-md-block position-absolute z-1" style="top: 20px;left: 20px;width:calc(100% - 35px);height: calc(100% - 170px);box-shadow: 33px 26px 85px rgba(0, 0, 0, 0.144);"></div>
               </div>
 
             </div>
@@ -130,8 +150,8 @@
 
      <!--Fim da segunda sessão-->
      <!--Inicio da terceira sessão-->
-    <section class="container pt-lg-5 pb-lg-5">
-      <div class="container mt-lg-5 mb-lg-5">
+    <section class="container pt-lg-5 pb-lg-5 pt-5">
+      <div class="container mt-lg-5 mb-lg-5 ">
         <h1 class="">Top Animes</h1>
         <div class="row">
           <div class="d-none d-lg-block col-md-3">
@@ -146,7 +166,7 @@
 
            
               <div class="col pb-3">
-                <div class="card card-body card-hover h-100 border-0  bg-transparent">
+                <div id="card" class="card card-body card-hover bg-transparent h-100 border-0">
                  <img src="img/25.png" class="d-block mb-3" width="180" alt="">
                   <h3 class="h6">Hunter x Hunter</h3>
                   <p class="fs-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus</p>
@@ -315,9 +335,9 @@
             <!--Input-->
             <div class="input-group input-footer input-icon">
               <i class="fa-regular fa-envelope icon-email"></i>
-              <input type="email" class="input" id="Email" name="Email" placeholder="Seu email" autocomplete="off">
+               <input type="email" class="input" id="Email" name="Email" placeholder="Seu email" autocomplete="off">
                <input class="button--submit" value="Enviar" type="submit"> 
-          </div>
+             </div>
            <div class="text-light form-text opacity-70 mt-3">
               <span>*Receba anúncios de novas temporadas e episódios.</span>
            </div>

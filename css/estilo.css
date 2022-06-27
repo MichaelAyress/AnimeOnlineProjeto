@@ -173,6 +173,37 @@ nav li:nth-of-type(5) {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1055px) {
+  nav li:nth-of-type(1) {
+  
+    background-image:none;
+    background-color: #B25A00;
+  }
+
+  nav li:nth-of-type(2) {
+  
+    background-image:none;
+    background-color: #FF9325;
+  }
+
+  nav li:nth-of-type(3) {
+  
+    background-image:none;
+    background-color: #FF860B;
+  }
+
+  nav li:nth-of-type(4) {
+  
+    background-image:none;
+    background-color: #0889B2;
+  }
+
+  nav li:nth-of-type(5) {
+  
+    background-image:none;
+    background-color: #0BC4FF;
+  }
+}
 
 /* ====================================
 Burger king
@@ -191,10 +222,10 @@ Burger king
 .open-overlay span {
   display: block;
   height: 4px;
-  background-color: #222222;
+  background-color: #FFC14D;
   cursor: pointer;
   margin-top: 8px;
-  box-shadow: 1px 1px 5px #ff92255e;
+ 
 }
 
 .animate-top-bar {
@@ -228,13 +259,14 @@ Burger king
 }
 
 
+
 /* ====================================
 Animation keyframes
 ==================================== */
 
 @keyframes animate-top-bar {
   0% {
-    background-color: #222222;
+    background-color: #FFC14D;
   }
   50% {
     -webkit-transform: translateY(9px);
@@ -254,7 +286,7 @@ Animation keyframes
 
 @keyframes animate-bottom-bar {
   0% {
-    background-color: #222222;
+    background-color: #FFC14D;
   }
   50% {
     -webkit-transform: translateY(-9px);
@@ -274,7 +306,7 @@ Animation keyframes
 
 @keyframes animate-middle-bar {
   0% {
-    background-color: #222222;
+    background-color: #FFC14D;
   }
   80% {
     background-color: #fff;
@@ -300,7 +332,7 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #222222;
+    background-color: #FFC14D;
   }
 }
 
@@ -320,7 +352,7 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #222222;
+    background-color: #FFC14D;
   }
 }
 
@@ -332,7 +364,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #222222;
+    background-color: #FFC14D;
   }
 }
 
@@ -383,7 +415,9 @@ Animation keyframes
 /* ====================================
 Tela Inicial
 ==================================== */
-
+.bg-secondaryR {
+  background-color: #F5F4F8;
+}
 .banner {
   width: 100%;
   height: 100vh;
@@ -421,8 +455,9 @@ Tela Inicial
 }
 
 .content p {
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: #fff;
+  padding-bottom: 50px;
 }
 
 
@@ -430,25 +465,18 @@ Tela Inicial
 Logo da Tela Inicial
 ==================================== */
 
-.logo-olho {
-  position: absolute;
-  width: 12%;
-  object-fit: cover;
-  top: -50%;
-  right: 27%;
-  z-index: 1;
-}
 
 header.header{
-	position: absolute;
-	top: 200%;
-	left: 0;
+	position: relative;
+	margin-top: 200px;
+  text-align: center;
 	width: 100%;
-	transform: translateY(-50%);
+	transform: translateY(-50%); 
+  
 }
 
 	.header h1 {
-		font-size: 10rem;
+		font-size: 15em;
 		color: #fff;
 		text-align: center;
 		margin-top: 0;
@@ -458,52 +486,334 @@ header.header{
     z-index: 0;
 	}
 
+
+@-webkit-keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  10.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  10.2% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  20.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 4s linear both;
+	        animation: text-flicker-in-glow 4s linear both;
+}
+
+/* -------------- Texto piscando */
+@keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  10.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  10.2% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  20.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+}
+
+
 .glitch-window{
 	position: absolute;
 	top: 0px;
 	left: -2px;
 	width: 100%;
-	color: #222222;
-	text-shadow: 2px 0 #FF9325, -1px 0 #00e6f6, -2px 0 #00e6f6;
-	overflow: hidden;
+	color: #111111;
+	
 	animation: crt-me 2500ms infinite linear alternate-reverse;
 }
 
 @keyframes crt-me {
-	 0% {
-        clip: rect(31px, 9999px, 94px, 0)
-    }
-    10% {
-        clip: rect(112px, 9999px, 76px, 0)
-    }
-    20% {
-        clip: rect(85px, 9999px, 77px, 0)
-    }
-    30% {
-        clip: rect(27px, 9999px, 97px, 0)
-    }
-    40% {
-        clip: rect(64px, 9999px, 98px, 0)
-    }
-    50% {
-        clip: rect(61px, 9999px, 85px, 0)
-    }
-    60% {
-        clip: rect(99px, 9999px, 114px, 0)
-    }
-    70% {
-        clip: rect(34px, 9999px, 115px, 0)
-    }
-    80% {
-        clip: rect(98px, 9999px, 129px, 0)
-    }
-    90% {
-        clip: rect(43px, 9999px, 96px, 0)
-    }
-    100% {
-        clip: rect(82px, 9999px, 64px, 0)
-    } 
+  0% {
+       clip: rect(30px, 9999px, 0px, 20)
+   }
+   10% {
+       clip: rect(25px, 9999px, 0px, 50)
+   }
+   20% {
+       clip: rect(0px, 9999px, 0px, 0)
+   }
+   30% {
+       clip: rect(27px, 9999px, 0px, 0)
+   }
+   40% {
+       clip: rect(64px, 9999px, 0px, 0)
+   }
+   50% {
+       clip: rect(61px, 9999px, 0px, 0)
+   }
+   60% {
+       clip: rect(99px, 9999px, 0px, 0)
+   }
+   70% {
+       clip: rect(34px, 9999px, 0px, 0)
+   }
+   80% {
+       clip: rect(98px, 9999px, 0px, 0)
+   }
+   90% {
+       clip: rect(43px, 9999px, 0px, 0)
+   }
+   100% {
+       clip: rect(100px, 9999px, 0px, 20)
+   } 
 }
+
+.p-tela-inicial {
+  opacity: 0;
+}
+
+.has-shown {
+  animation: has-shown 2s 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+
+@keyframes has-shown {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+
+  to {
+      opacity: 1;
+      transform: none;
+  }
+}
+
+
 
 /* ====================================
 Botão tela inicial Sing in
@@ -522,6 +832,7 @@ Botão tela inicial Sing in
  outline: transparent;
  position: relative;
  cursor: pointer;
+ opacity: 0;
 }
 
 .btn-inicial::after {
@@ -546,6 +857,7 @@ Botão tela inicial Sing in
 .btn-inicial:hover::after {
  animation: 1s glitch;
  animation-timing-function: steps(2, end);
+ opacity: 1;
 }
 
 @keyframes glitch {
@@ -627,8 +939,9 @@ Sessão 2
 }
 
 .text-start {
-  
-   font-size: calc(1.475rem + 2.7vw);
+   text-align: left;
+   font-size: 3.4rem;
+   font-weight: 700;
    line-height: 1.2;
    font-family: "Noto Sans", sans-serif;
 }
@@ -660,6 +973,8 @@ Sessão 2
   transform: none;
 */
 
+
+
 .icon-principal {
   font-size: 1em;
  
@@ -671,13 +986,16 @@ Sessão 2
 }
 
 .zindex-1 {
-  z-index: -1;
+  z-index: 1;
 }
 
 .zindex-5 {
-  z-index: -5;
+  z-index: 5;
 }
 
+.z-1 {
+  z-index: -100;
+}
 
 @media (min-width: 768px) {
   .mt-md-n4 {
@@ -718,6 +1036,24 @@ Sessão 2
   }
 }
 
+
+
+.zoom {
+  max-width: 100%;
+  -moz-transition: all 0.3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoom:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1) ;
+  transform: scale(1.1) ;
+}
+
+
+
+
 /*-------------------------------
            Card
 ---------------------------------*/
@@ -730,9 +1066,17 @@ Sessão 2
   transition-delay: 0s, 0s, 0s !important;
 }
 
+.card:hover {
+ 
+  box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.068);
+}
+
+
 .fs-sm {
   font-size: 1rem !important;
 }
+
+
 
 /* ====================================
 Sessão 4
@@ -938,5 +1282,45 @@ Footer
 .link-footer:hover {
   color: #FF9325;
   
+}
+
+@media (max-width: 780px) {
+  .header h1 {
+    font-size: 10em;
+  }
+}
+
+@media (max-width: 540px) {
+  .header h1 {
+    font-size: 8em;
+  }
+  .content p {
+    font-size: 1em;
+  }
+
+  .btn-inicial {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 415px) {
+  .header h1 {
+    font-size: 5em;
+  }
+  .content p {
+    font-size: 0.80em;
+  }
+
+   h2.h4{
+    font-size: 16px;
+  }
+
+  .icon-conteudo {
+    font-size: 2em;
+  }
+  .input {
+    max-width: 112px;
+  }
 }
 
